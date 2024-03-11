@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.button-box {
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    gap: 10px;
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.button-box img {
+    width: 50px;
+    height: 50px;
+    margin-right: 7px;
+}
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: aquamarine;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+}
+
+.sidebar ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+/* CSS for modal */
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: auto;
+    gap: 10px;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

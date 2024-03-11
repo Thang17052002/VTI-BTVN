@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Chào mừng</h1>
+    </header>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li>
+            <button onclick="handleUser()" id="user" class="button-box"> <img src="11.jpg"/>UserList</button>
+            <button onclick="handleTodo()" id="todo" class="button-box"> <img src="22.jpg"/>PhotoList</button>
+            <button onclick="handleAlbum()" id="album"  class="button-box"> <img src="33.jpg"/>Album List</button>
+            <button onclick="handlePost()" id="post" class="button-box"> <img src="55.jpg"/>PostList</button>
+                </li>
+            </ul>
+        </nav>
+        <div id="content" class="content">
+        <main>
+            <h2>Hello</h2>
+            <p>Click vào biểu tượng.</p>
+        </main>
+        </div>
+        <div id="modal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span id="closeButton" class="close">&times;</span>
+                <div id="info"></div>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <p>VTI-2024</p>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>
